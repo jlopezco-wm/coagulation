@@ -43,7 +43,7 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
                            sidebarPanel(
                              numericInput("txt1", "Effluent volume (L):", value = NA, min = 0),
                              numericInput("txt2", "Effluent turbidity (NTU):", value = NA, min = 1000, max = 30000),
-                             numericInput("txt3", "Tanfloc concentration (mg/L)", value = NA, min = 1),
+                             numericInput("txt3", "Tanfloc concentration (mg/mL)", value = NA, min = 1),
                              helpText("Leave this field blank if unknown."),
                              selectInput(
                                inputId = "slc",
